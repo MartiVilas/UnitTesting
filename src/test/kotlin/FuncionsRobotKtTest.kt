@@ -43,6 +43,12 @@ class FuncionsRobotKtTest{
     }
 
     @Test
+    fun checkIfUpIncreasesValueVelocityIncreased(){
+        val expected = arrayOf(0.0,4.0)
+        assertArrayEquals(expected, dalt(arrayOf(0.0,0.0),4.0))
+    }
+
+    @Test
     fun checkIfDownIncreasesValue(){
         val expected = arrayOf(0.0,1.0)
         assertArrayEquals(expected, baix(arrayOf(0.0,0.0),-1.0))
