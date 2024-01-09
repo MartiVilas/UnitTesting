@@ -2,6 +2,13 @@ import org.example.*
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 
+/**
+ * Este documento son ejemplos de Test con asserts tanto sencillos como con arrays, para comprobar si el funcionamiento
+ * del robot programado por David Marin funciona correctamente.
+ * @author David Marin & Martí Vilàs.
+ * @see Test
+ */
+
 class FuncionsRobotKtTest{
     @Test
     fun checkIfVelocitatIncreasesValue() {
