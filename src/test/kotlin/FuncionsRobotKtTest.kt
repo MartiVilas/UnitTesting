@@ -17,10 +17,17 @@ class FuncionsRobotKtTest{
     }
 
     @Test
-    fun checkIfMovementWorks(){
+    fun checkIfMovementWorksIncreases(){
         val expected = arrayOf(1.0,1.0)
-        assertArrayEquals(expected, dreta(arrayOf(0.0,0.0),1.0))
-        assertArrayEquals(expected, dalt(arrayOf(0.0,0.0),1.0))
+        assertArrayEquals(expected, dreta(arrayOf(0.0,1.0),1.0))
+        assertArrayEquals(expected, dalt(arrayOf(1.0,0.0),1.0))
+    }
+
+    @Test
+    fun checkIfMovementWorksDecreases(){
+        val expected = arrayOf(0.0,0.0)
+        assertArrayEquals(expected, dreta(arrayOf(1.0,0.0),-1.0))
+        assertArrayEquals(expected, dalt(arrayOf(0.0,1.0),-1.0))
     }
 
     @Test
